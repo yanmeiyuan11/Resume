@@ -81,12 +81,14 @@ html,body{
         -webkit-transform: scale(0.5);
     }
     100% {
-        -webkit-transform: scale(1.0)
+        -webkit-transform: scale(1.2)
     }
 }
 #a1 p:nth-child(2) {
     -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
     -webkit-transition: 2s;
+    transition: 2s;
 }
 /*.a2{*/
     /*margin-left: 30px;*/
@@ -334,6 +336,11 @@ html,body{
     /*background: #fff;*/
     /*opacity: 0.5;*/
 /*}*/
+.a4 p{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
 .a4 p:nth-of-type(1){
     position: absolute;
     /*top: -20px;*/
@@ -479,6 +486,16 @@ html,body{
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+.a5 .code{
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    opacity: 0.5;
+    border-radius: 10px;
+}
 .a5 .logo{
     width: 86px;
     /*height: 88px;*/
@@ -493,6 +510,7 @@ html,body{
     position: absolute;
     right: 44px;
     bottom: 20px;
+    opacity: 0.7;
 }
 .a5 .contact p{
     width: 100%;
@@ -515,6 +533,42 @@ html,body{
 }
 .a5 .logo,.a5 .contact{
     left: 700px;
+}
+/*.a5 .code{*/
+    /*top: -700px;*/
+/*}*/
+/*#a5 .code{*/
+    /*-webkit-transform:  rotate(7200deg);*/
+
+
+    /*-webkit-transition-duration: 1s;*/
+    /*transition-duration: 1s;*/
+/*}*/
+#a5 .code {
+    -webkit-animation: codeAnimate 1s ease-out;
+    animation: codeAnimate 1s ease-out;
+}
+@-webkit-keyframes codeAnimate {
+    0% {
+        -webkit-transform: scale(1.0) rotateX(180deg);
+    }
+    50%{
+        -webkit-transform: scale(0.2)
+    }
+    100% {
+        -webkit-transform: scale(1.0) rotateY(180deg)
+    }
+}
+@keyframes codeAnimate {
+    0% {
+        -webkit-transform: scale(1.0) rotateX(180deg);
+    }
+    50%{
+        -webkit-transform: scale(0.2)
+    }
+    100% {
+        -webkit-transform: scale(1.0) rotateY(180deg)
+    }
 }
 #a5 .logo,#a5 .contact{
     left: 132px;
